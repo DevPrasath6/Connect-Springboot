@@ -7,9 +7,17 @@
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "Frontend/public/favicon.ico",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/favicon.ico",
+      "dest": "/Frontend/public/favicon.ico"
+    },
     {
       "handle": "filesystem"
     },
